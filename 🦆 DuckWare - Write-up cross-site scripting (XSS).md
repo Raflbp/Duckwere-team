@@ -598,4 +598,3 @@ O **prompt.ml** é um laboratório de **XSS** criativo. Cada nível reforça con
 * Aplicar **CSP** e validações por **whitelist** robustas.
 
 > **Restante a completar:** payloads exemplares dos níveis **9** e **E** (dependem de variantes específicas do jogo/navegador).
-```
