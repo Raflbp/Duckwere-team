@@ -32,7 +32,7 @@ Por último, mas não menos importante, payloads mais curtas recebem mais pontos
 
 Cada nível adiciona uma nova dificuldade e novos caminhos para se chegar ao resultado desejado. Ao completar os desafios, o código que aparece em cada um deles será substituído por **YOU WON**.
 
-<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/resp.png'></center>
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png'></center>
 
 O site possui 16 desafios, classificados de `0 a 9` e de `A a F`.
 
