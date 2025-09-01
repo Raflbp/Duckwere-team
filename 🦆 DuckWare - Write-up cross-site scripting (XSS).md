@@ -21,8 +21,7 @@ O site possui 16 desafios sendo classificados de `0 a 9` e de `A a F`
 
 ### desafio 0
 
-![[Atividade_0❌.png]]
-
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
 	Codigo
 ```
 function escape(input) {
