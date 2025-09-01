@@ -1,3 +1,4 @@
+🦆 DuckWare - Write-up cross-site scripting (XSS)
 >Autor: @Ralfbp
 
 ---
@@ -55,7 +56,7 @@ function escape(input) {
 }
 ```
 
-[Ir para a resolução do 0º desafio](https://www.google.com/search?q=%230%C2%BA-desafio)
+[Ir para a resolução do 0º desafio](#🔹_0º-desafio)
 
 ### 🔹 Desafio 1 — Regex simples
 
