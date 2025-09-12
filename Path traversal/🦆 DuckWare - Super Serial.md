@@ -8,14 +8,15 @@
 ---
 ## Introdução
 
-<center><img src='Path traversal/Imagens Super Serial/Quetão.png'></center>
+<center><img src='Path traversal/Imagens Super Serial/Quetão.png'></center> 
+
 ```
 http://mercury.picoctf.net:25395/
 ```
 ---
 ## 🛠️ Resolução
 
-<center><img src='Path traversal/Imagens Super Serial/Pagina_login.png'></center>
+<center><img src='Path traversal/Imagens Super Serial/Pagina_login.png'></center>  
 
 * utilizando o robots.txt
 
@@ -23,7 +24,7 @@ http://mercury.picoctf.net:25395/
 http://mercury.picoctf.net:25395/robots.txt
 ```
 
-<center><img src='Path traversal/Imagens Super Serial/Robots.txt.png'></center>
+<center><img src='Path traversal/Imagens Super Serial/Robots.txt.png'></center>  
 
 ```
 User-agent: *
@@ -33,13 +34,13 @@ Disallow: /admin.phps
 * Com isso sabemos que existe um /admin
 * Mas al tentar acessar, não conseguimos usar o /admin.phps, /admin e nem o /admin.php
 
-<center><img src='Path traversal/Imagens Super Serial/admin.phps.png'></center>
+<center><img src='Path traversal/Imagens Super Serial/admin.phps.png'></center>  
 
 * Sabendo que ele existe, é necessário outra abordagem, para se ter a flag.
 *  Fazendo o teste, com letras e números aleatório no login e senha.
 *  login e senha utilizado **teste** .
 
-<center><img src='Path traversal/Imagens Super Serial/test.png'></center>
+<center><img src='Path traversal/Imagens Super Serial/test.png'></center>  
 
 *  somos levados para outro diretório .
 

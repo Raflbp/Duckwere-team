@@ -7,15 +7,16 @@
 
 ## Introdução
 
+
 <center><img src= 'Secret/Imagens secret/question_not_run.png' ></center>
 
 - Ao clicar em "**Launch Instance**", a questão se inicia e disponibiliza um link.
-    
+   
 
 <center><img src= 'Secret/Imagens secret/question_start.png' ></center>
 
 - Clique **aqui** para começar.
-    
+   
 
 ```
 http://saturn.picoctf.net:56446/
@@ -26,7 +27,7 @@ http://saturn.picoctf.net:56446/
 ## 🛠️ Resolução
 
 - A questão leva para um site com três diretórios.
-    
+- 
 
 <center><img src= 'Secret/Imagens secret/home.png' ></center> <center><img src= 'Secret/Imagens secret/strong.png' ></center><center><img src= 'Secret/Imagens secret/latin.png' ></center>
 
@@ -52,16 +53,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam urna, viverra
 ```
 
 - Ao analisar os três diretórios, nada é encontrado.
-    
+   
 - Indo para o "**page source**" com o atalho **CTRL + U** ou clicando com o botão direito do mouse e selecionando "**View page source**".
-    
+  
 
 <center><img src= 'Secret/Imagens secret/secrets.png' ></center>
 
 - Temos um link para `[secret/assets/index.css](http://saturn.picoctf.net:56446/secret/assets/index.css)`, mas ele apenas direciona para a imagem da página 1.
-    
-- No entanto, ao adicionar `/secret/` ao link inicial, um novo diretório é descoberto.
-    
+
+- No entanto, ao adicionar `/secret/` ao link inicial, um novo diretório é descoberto.    
 
 ```
 http://saturn.picoctf.net:56446/secret/
@@ -77,49 +77,49 @@ http://saturn.picoctf.net:56446/secret/
 <center><img src= 'Secret/Imagens secret/hidden.png' ></center>
 
 - Há um link no código: `[hidden/file.css](http://saturn.picoctf.net:53023/secret/hidden/file.css)`, que leva a uma página em branco.
-    
-- Mas ao usar a primeira parte do comando na barra de endereço, `/hidden/`.
-    
+
+- Mas ao usar a primeira parte do comando na barra de endereço, `/hidden/`.  
+
 
 ```
 http://saturn.picoctf.net:53023/secret/hidden/
 ```
 
-<center><img src= 'Secret/Imagens secret/Pag_3.png' ></center>
+<center><img src= 'Secret/Imagens secret/Pag_3.png' ></center>  
+
 
 - Um segundo diretório secreto é encontrado, que novamente não exibe nada.
-    
 - Tentativas de login ou registro não funcionam.
-    
 - Ao clicar em "login", uma mensagem de aviso aparece.
-    
+- 
 
-<center><img src= 'Secret/Imagens secret/tentativa.png' ></center>
+<center><img src= 'Secret/Imagens secret/tentativa.png' ></center>  
+
 
 - Após o `Alert()`, uma nova abordagem é iniciada.
-    
 - Acessando o "**page source**" novamente com **CTRL + U** ou clicando com o botão direito do mouse e selecionando "**View page source**".
-    
 
-<center><img src= 'Secret/Imagens secret/superhidden.png' ></center>
+
+<center><img src= 'Secret/Imagens secret/superhidden.png' ></center>  
 
 - O código tem a mesma palavra para entrar no diretório atual, `hidden`, mas com uma pequena diferença, `superhidden`.
-    
 - Adicionando à barra de endereço para entrar no diretório.
-    
 
 ```
 http://saturn.picoctf.net:56446/secret/hidden/superhidden/
 ```
 
-<center><img src= 'Secret/Imagens secret/pg_sem_flag.png' ></center>
+<center><img src= 'Secret/Imagens secret/pg_sem_flag.png' ></center>  
+
 
 - Apenas uma imagem em branco é exibida, mas ao usar **CRTL + A**, a flag aparece.
-    
+- 
 
-<center><img src= 'Secret/Imagens secret/flag.png' ></center>
+<center><img src= 'Secret/Imagens secret/flag.png' ></center>  
+
 
 ---
+
 
 ## ✅ Conclusão
 

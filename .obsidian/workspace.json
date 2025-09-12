@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secret/🦆 DuckWare - secret.md",
+                "file": "Path traversal/🦆 DuckWare - Super Serial.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "🦆 DuckWare - secret"
+              "title": "🦆 DuckWare - Super Serial"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "36999866c8925bc5",
   "lastOpenFiles": [
-    "XSS/🦆 DuckWare - cross-site scripting (XSS).md",
     "Secret/🦆 DuckWare - secret.md",
+    "XSS/🦆 DuckWare - cross-site scripting (XSS).md",
     "Secret/Imagens secret/tentativa.png",
     "Secret/Imagens secret/Pag_2.png",
     "Secret/Imagens secret/latin.png",
