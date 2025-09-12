@@ -15,7 +15,8 @@
               "state": {
                 "file": "Path traversal/🦆 DuckWare - Super Serial.md",
                 "mode": "source",
-                "source": true
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "🦆 DuckWare - Super Serial"
@@ -151,7 +152,8 @@
               "title": "Outline of 🦆 DuckWare - Super Serial"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -171,8 +173,12 @@
   },
   "active": "36999866c8925bc5",
   "lastOpenFiles": [
-    "Secret/🦆 DuckWare - secret.md",
     "XSS/🦆 DuckWare - cross-site scripting (XSS).md",
+    "Secret/🦆 DuckWare - secret.md",
+    "Path traversal/🦆 DuckWare - Super Serial.md",
+    "Untitled.base",
+    "2025-09-11.md",
+    "Untitled 1.base",
     "Secret/Imagens secret/tentativa.png",
     "Secret/Imagens secret/Pag_2.png",
     "Secret/Imagens secret/latin.png",
@@ -183,7 +189,6 @@
     "Secret/Imagens secret/secrets.png",
     "Secret/Imagens secret/superhidden.png",
     "Secret/Imagens secret/strong.png",
-    "Path traversal/🦆 DuckWare - Super Serial.md",
     "Secret/Imagens secret",
     "Secret"
   ]

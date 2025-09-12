@@ -32,7 +32,7 @@ Por último, mas não menos importante, payloads mais curtas recebem mais pontos
 
 Cada nível adiciona uma nova dificuldade e novos caminhos para se chegar ao resultado desejado. Ao completar os desafios, o código que aparece em cada um deles será substituído por **YOU WON**.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png'></center>
 
 
 O site possui 16 desafios, classificados de `0 a 9` e de `A a F`.
@@ -47,7 +47,7 @@ O site possui 16 desafios, classificados de `0 a 9` e de `A a F`.
 
 Desafio básico para demonstrar como os desafios funcionam. Ele exige uma injeção de HTML ativo que execute o `prompt(1)`.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
 
 ```
 function escape(input) {
@@ -63,8 +63,8 @@ function escape(input) {
 
 Exige desviar de um mecanismo simples de remoção de caracteres. A expressão regular simples pode ser contornada removendo-se o caractere final `>`. Para forçar o navegador a renderizar o vetor de ataque, é necessário um espaço final ou uma quebra de linha.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
-
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
+s
 ```
 function escape(input) {
     // tags stripping mechanism from ExtJS library
@@ -82,7 +82,7 @@ function escape(input) {
 
 Todos os parênteses abertos e sinais de igual são bloqueados.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_2❌.png'></center>
 
 ```
 function escape(input) {
@@ -100,7 +100,7 @@ function escape(input) {
 
 O nível 3 exige escapar a entrada de uma estrutura de comentário HTML. Seria fácil se não fosse por uma limitação complexa que bloqueia todos os delimitadores de comentários em potencial.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_3❌.png'></center>
 
 ```
 function escape(input) {
@@ -116,7 +116,7 @@ function escape(input) {
 
 ### 🔹 Desafio 4 — Scripts externos (whitelist de domínio)
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
 
 ```
 function escape(input) {
@@ -140,7 +140,7 @@ Precisamos ignorar uma expressão regular que tenta bloquear manipuladores de ev
 
 Assim, podemos injetar um manipulador de eventos seguido por uma nova linha e, em seguida, executar **JavaScript** arbitrário. Note que não podemos usar as palavras-chave `autofocus`, pois elas estão sendo filtradas. No entanto, ainda podemos usar o evento `onresize` no **MSIE**.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_5❌.png'></center>
 
 ```
 function escape(input) {
@@ -160,7 +160,7 @@ No nível 6, a expressão regular tenta proibir o uso de strings `javascript`, `
 
 No entanto, o problema é que isso nos permite criar nossas próprias entradas, que podem ser usadas para sobrepor a propriedade `action` do formulário. Devido à sobrecarga do **DOM**, `document.forms[0].action` retornará o campo de entrada recém-criado em vez do atributo `action` real, permitindo-nos executar nosso **JavaScript**.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_6❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_6❌.png'></center>
 
 ```
 function escape(input) {
