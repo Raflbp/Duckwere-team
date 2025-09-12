@@ -32,7 +32,11 @@ Por último, mas não menos importante, payloads mais curtas recebem mais pontos
 
 Cada nível adiciona uma nova dificuldade e novos caminhos para se chegar ao resultado desejado. Ao completar os desafios, o código que aparece em cada um deles será substituído por **YOU WON**.
 
+<<<<<<< HEAD:XSS/🦆 DuckWare - cross-site scripting (XSS).md
 <center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png'></center>
+=======
+<center><img src='/Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png'></center>
+>>>>>>> fd2c3ce112abf1acbae77ee16f1f5543175dadd2:🦆 DuckWare - Write-up cross-site scripting (XSS).md
 
 O site possui 16 desafios, classificados de `0 a 9` e de `A a F`.
 
@@ -580,6 +584,10 @@ Um truque que podemos usar aqui é usar comentários **HTML** `<script>prompt(1)
 
 ```
 
+<<<<<<< HEAD:XSS/🦆 DuckWare - cross-site scripting (XSS).md
+=======
+Ir para o desafio F](#-desafio-f--segmentação--título-limitado)
+>>>>>>> fd2c3ce112abf1acbae77ee16f1f5543175dadd2:🦆 DuckWare - Write-up cross-site scripting (XSS).md
 ---
 
 ## ✅ Conclusão
@@ -597,4 +605,8 @@ O **prompt.ml** é um laboratório de **XSS** criativo. Cada nível reforça con
 * **Escapar corretamente** (`& < > " ' /`).
 * Aplicar **CSP** e validações por **whitelist** robustas.
 
+<<<<<<< HEAD:XSS/🦆 DuckWare - cross-site scripting (XSS).md
 > **Restante a completar:** payloads exemplares dos níveis **9** e **E** (dependem de variantes específicas do jogo/navegador).
+=======
+> **Restante a completar:** payloads exemplares dos níveis **9** e **E** (dependem de variantes específicas do jogo/navegador).
+>>>>>>> fd2c3ce112abf1acbae77ee16f1f5543175dadd2:🦆 DuckWare - Write-up cross-site scripting (XSS).md
