@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "1528ca407767a731",
+    "id": "9bf37fc3cbcb29f9",
     "type": "split",
     "children": [
       {
-        "id": "eedcdbc146cb205d",
+        "id": "bb96a57198b9241b",
         "type": "tabs",
         "children": [
           {
-            "id": "36999866c8925bc5",
+            "id": "33fe0661e8854a75",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secret/🦆 DuckWare - secret.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "🦆 DuckWare - secret"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b114ed22db394f6d",
+    "id": "1c04fa7240319ade",
     "type": "split",
     "children": [
       {
-        "id": "d97b4254fc739e52",
+        "id": "d5dc6d5a376f3161",
         "type": "tabs",
         "children": [
           {
-            "id": "f4477eac3ac490ca",
+            "id": "a8a5285676daebd1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "35489764f1212928",
+            "id": "fb07674cbb828e7f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "d6bee04f4ae2cb24",
+            "id": "0aae3e4e6a15e9dd",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +77,20 @@
     "width": 300
   },
   "right": {
-    "id": "77f84e42f5b8147e",
+    "id": "3dfbd80156c5d966",
     "type": "split",
     "children": [
       {
-        "id": "4ba0242d4e635248",
+        "id": "d1690a66705bb5e8",
         "type": "tabs",
         "children": [
           {
-            "id": "b045a7d746d5595f",
+            "id": "6dd66ce6d8d3f67f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Path traversal/🦆 DuckWare - Super Serial.md",
+                "file": "🦆 DuckWare - Write-up cross-site scripting (XSS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +100,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 🦆 DuckWare - Super Serial"
+              "title": "Backlinks for 🦆 DuckWare - Write-up cross-site scripting (XSS)"
             }
           },
           {
-            "id": "d17932653ae05ac5",
+            "id": "d871e70bcd02d148",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Path traversal/🦆 DuckWare - Super Serial.md",
+                "file": "🦆 DuckWare - Write-up cross-site scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 🦆 DuckWare - Super Serial"
+              "title": "Outgoing links from 🦆 DuckWare - Write-up cross-site scripting (XSS)"
             }
           },
           {
-            "id": "1ac505aa3ed0c928",
+            "id": "13c8e7cec7f1f07e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +133,18 @@
             }
           },
           {
-            "id": "cdf4d0f9142b3aef",
+            "id": "6bf178f4709f9aa3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Path traversal/🦆 DuckWare - Super Serial.md",
+                "file": "🦆 DuckWare - Write-up cross-site scripting (XSS).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 🦆 DuckWare - Super Serial"
+              "title": "Outline of 🦆 DuckWare - Write-up cross-site scripting (XSS)"
             }
           }
         ]
@@ -169,22 +165,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "36999866c8925bc5",
+  "active": "33fe0661e8854a75",
   "lastOpenFiles": [
-    "XSS/🦆 DuckWare - cross-site scripting (XSS).md",
-    "Secret/🦆 DuckWare - secret.md",
-    "Secret/Imagens secret/tentativa.png",
-    "Secret/Imagens secret/Pag_2.png",
-    "Secret/Imagens secret/latin.png",
-    "Secret/Imagens secret/home.png",
-    "Secret/Imagens secret/hidden.png",
-    "Secret/Imagens secret/flag.png",
-    "Secret/Imagens secret/contact.png",
-    "Secret/Imagens secret/secrets.png",
-    "Secret/Imagens secret/superhidden.png",
-    "Secret/Imagens secret/strong.png",
-    "Path traversal/🦆 DuckWare - Super Serial.md",
-    "Secret/Imagens secret",
-    "Secret"
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F❌.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Resp.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F✅.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D❌.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D✅.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C❌.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_E❌.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C✅.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B✅.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A✅.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_9❌.png",
+    "XSS/Imagem do 🦆 DuckWare 🦆 DuckWare",
+    "XSS/🦆 DuckWare - Write-up cross-site scripting (XSS).md",
+    "XSS",
+    "Nova pasta",
+    "🦆 DuckWare - Write-up cross-site scripting (XSS).md",
+    "README.md",
+    "Untitled.md",
+    "desafio_xss.md",
+    "🦆 DuckWare - Write-up cross-site scripting (XSS.md"
   ]
 }
