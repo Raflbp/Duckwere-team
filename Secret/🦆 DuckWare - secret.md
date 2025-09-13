@@ -57,7 +57,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam urna, viverra
 - Indo para o "**page source**" com o atalho **CTRL + U** ou clicando com o botão direito do mouse e selecionando "**View page source**".
   
 
-<center><img src= 'Imagens secret/secrets.png' ></center>
+<center><img src= 'Imagens secret/secrets.png'></center>
+
 
 - Temos um link para `[secret/assets/index.css](http://saturn.picoctf.net:56446/secret/assets/index.css)`, mas ele apenas direciona para a imagem da página 1.
 
@@ -67,7 +68,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam urna, viverra
 http://saturn.picoctf.net:56446/secret/
 ```
 
-<center><img src= 'Imagens secret/pag_2.png' ></center>
+<center><img src= 'Imagens secret/Pag_2.png' ></center>
 
 - A página exibe apenas um meme.
     
