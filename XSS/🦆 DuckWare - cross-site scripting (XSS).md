@@ -50,11 +50,13 @@ Desafio básico para demonstrar como os desafios funcionam. Ele exige uma injeç
 <center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0❌.png'></center>
 
 ```
+
 function escape(input) {
     // warm up
     // script should be executed without user interaction
     return '<input type="text" value="' + input + '">';
 }
+
 ```
 
 [Ir para a resolução do 0º desafio](#-0º-desafio)
@@ -64,7 +66,8 @@ function escape(input) {
 Exige desviar de um mecanismo simples de remoção de caracteres. A expressão regular simples pode ser contornada removendo-se o caractere final `>`. Para forçar o navegador a renderizar o vetor de ataque, é necessário um espaço final ou uma quebra de linha.
 
 <center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_1❌.png'></center>
-s
+
+
 ```
 function escape(input) {
     // tags stripping mechanism from ExtJS library
@@ -74,6 +77,7 @@ function escape(input) {
 
     return '<article>' + input + '</article>';
 }
+
 ```
 
 [Ir para a resolução do 1º desafio](#-1º-desafio)
@@ -205,7 +209,7 @@ O truque aqui é usar o primeiro segmento para fechar a tag `<p>` e, em seguida,
 
 No segundo segmento, fechamos nosso atributo e abrimos nosso evento (`onload`). Depois, usamos um comentário **JS** (`/*`) para conter o lixo que será colocado entre o segundo e o terceiro segmento. No terceiro segmento, fechamos o comentário **JS** e, finalmente, chamamos nosso precioso `prompt(1)`.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_7❌.png'></center>
 
 ```
 function escape(input) {
@@ -224,7 +228,7 @@ function escape(input) {
 
 Existem dois desafios a serem resolvidos no nível 8. O primeiro é usar um separador de linhas **JavaScript** válido e o segundo é encontrar uma maneira alternativa de comentar o código. Como pode ser notado no código, os caracteres `\r\n` são filtrados. No entanto, os seguintes caracteres também são tratados como separadores de linhas válidos em **JavaScript**:
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_8❌.png'></center>
 
 ```
 function escape(input) {
@@ -247,7 +251,7 @@ Usa a expressão regular `"<([a-zA-Z])"`, que impede o usuário de adicionar qua
 
 O caractere `ſ`, quando passado para a função `toUpperCase()`, seria convertido no caractere **ASCII** "S", resolvendo assim nosso problema.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_9❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_9❌.png'></center>
 
 ```
 function escape(input) {
@@ -267,7 +271,7 @@ function escape(input) {
 
 Este é um dos mais fáceis de resolver neste desafio. Existem duas expressões regulares para ignorar: a primeira remove todas as ocorrências da palavra-chave `prompt`, enquanto a segunda remove todas as aspas simples `'`.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_A❌.png'></center>
 
 ```
 function escape(input) {
@@ -287,7 +291,7 @@ function escape(input) {
 
 Nos permite injetar diretamente no que será o corpo de um elemento de script. No entanto, antes disso, a string que podemos influenciar passa por uma filtragem pesada e não podemos injetar operadores ou outros elementos da linguagem que permitiriam concatenação e injeção de payload fáceis.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_B❌.png'></center>
 
 ```
 function escape(input) {
@@ -313,7 +317,7 @@ function escape(input) {
 
 É semelhante ao nível 10, mas as expressões regulares usadas para filtragem são diferentes. O primeiro desafio real é lidar com a instrução `encodeURIComponent`. Usando esta função, caracteres como `/`, `=`, `?`, etc. são codificados em **URL** e, portanto, a maioria dos vetores de ataque não são mais utilizáveis.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_C❌.png'></center>
 
 ```
 function escape(input) {
@@ -333,7 +337,7 @@ function escape(input) {
 
 Requer alguns truques interessantes, um dos quais também será útil para o nível oculto. O objetivo principal deste nível é adulterar um objeto **JSON** (`config`) com uma chave especial (`source`) e contornar uma série de limitações.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_D❌.png'></center>
 
 ```
 function escape(input) {
@@ -375,7 +379,7 @@ function escape(input) {
 
 ### 🔹 Desafio E — Incompleta
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_E❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_E❌.png'></center>
 
 ```
 function escape(input) {
@@ -399,7 +403,7 @@ function escape(input) {
 
 Cada segmento é reduzido a um comprimento máximo de 15 caracteres e distorcido em uma tag `<p>`.
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F❌.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_F❌.png'></center>
 
 ```
 function escape(input) {
@@ -423,7 +427,7 @@ function escape(input) {
 
 ### 🔹 0º desafio
 
-<center><img src='XSS/Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0✅.png'></center>
+<center><img src='Imagem do 🦆 DuckWare 🦆 DuckWare/Atividade_0✅.png'></center>
 
 ```
 "><script>prompt(1)</script>
