@@ -45,19 +45,24 @@ Disallow: /admin.phps
 *  somos levados para outro diretório .
 
 ```
+
 http://mercury.picoctf.net:25395/index.php
+
 ```
 
 * Adicionando a letra **S** no final desse **index.php** para se analisar o código
 * Receberemos o código do diretório **index.php**
 
 ```
+
 http://mercury.picoctf.net:25395/index.phps
+
 ```
 
  * Com isso recebemos o código desse diretório 
  
  ```
+ 
  <?php
 require_once("cookie.php");
 
@@ -111,25 +116,32 @@ if(isset($_POST["user"]) && isset($_POST["pass"])){
 		</div>
 	</body>
 </html>
+
  ```
 
 * Ao analisar esse códigos se vê que existe um **cookie.php** ao se testar, para ver se é um diretório que te retorna algo
 
 <center><img src='Imagens Super Serial/cookie.php.png'></center>
 
+
 ```
+
 http://mercury.picoctf.net:25395/cookie.php
+
 ```
 
 * Utilizando novamente o **S** para se ler o código do  **cookie.php**
 
 ```
+
 http://mercury.picoctf.net:25395/cookie.phps
+
 ```
 
 * Recebemos o código  cookie.phps
 
 ```
+
 <?php
 session_start();
 
@@ -210,7 +222,9 @@ if(isset($_COOKIE["login"])){
 * Adicionando o **S** para analisarmos esse código temos 
 
 ```
+
 http://mercury.picoctf.net:25395/authentication.phps
+
 ```
 
 * **authentication.phps**
