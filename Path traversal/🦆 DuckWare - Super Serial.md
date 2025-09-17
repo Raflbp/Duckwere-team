@@ -40,7 +40,7 @@ Disallow: /admin.phps
 *  Fazendo o teste, com letras e números aleatório no login e senha.
 *  login e senha utilizado **teste** .
 
-<center><img src='Imagens Super Serial/test.png'></center>  
+<center><img src='Imagens Super Serial/Test.png'></center>  
 
 *  somos levados para outro diretório .
 
@@ -62,7 +62,6 @@ http://mercury.picoctf.net:25395/index.phps
  * Com isso recebemos o código desse diretório 
  
  ```
- 
  <?php
 require_once("cookie.php");
 
@@ -116,7 +115,6 @@ if(isset($_POST["user"]) && isset($_POST["pass"])){
 		</div>
 	</body>
 </html>
-
  ```
 
 * Ao analisar esse códigos se vê que existe um **cookie.php** ao se testar, para ver se é um diretório que te retorna algo

@@ -67,7 +67,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam urna, viverra
 http://saturn.picoctf.net:56446/secret/
 ```
 
-<center><img src= 'Imagens secret/pag_2.png' ></center>
+<center><img src= 'Imagens secret/Pag_2.png' ></center>
 
 - A página exibe apenas um meme.
     
